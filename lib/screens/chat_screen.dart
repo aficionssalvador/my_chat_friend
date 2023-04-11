@@ -7,7 +7,6 @@ import 'package:provider/provider.dart';
 
 import '/models/lista_ficheros_model.dart';
 import '/providers/config_provider.dart';
-import '/providers/lista_ficheros_provider.dart';
 import '/providers/messages_provider.dart';
 import '/providers/open_ai_provider.dart';
 import '/providers/parameters_provider.dart';
@@ -145,8 +144,8 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 
   String devuelveSaludo(){
-    //String texteCat;
-    //String texteEsp;
+    // String texteCat;
+    // String texteEsp;
     String texte = "";
     if (currentConfigModel!.nombre != "") {
       texte = currentParameterModel!.getPI(currentConfigModel!.idioma, "salutacio");
